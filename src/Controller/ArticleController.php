@@ -10,11 +10,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class ArticleController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="app_homepage")
      */
     public function homepage()
     {
-        return new Response('OMG! My first page already! WOOO!');
+        return $this->render('article/homepage.html.twig');
     }
 
     /**
@@ -27,6 +27,9 @@ class ArticleController extends AbstractController
             'Woohoo! I\'m going on an all-asteroid diet!',
             'I like bacon too! Buy some from my site! bakinsomebacon.com',
         ];
+
+        dump($slug, $this);
+
         return $this->render('article/show.html.twig', [
             'title'=>"Why Astroids Taste Like Bacon",
             'comments' => $comments,
