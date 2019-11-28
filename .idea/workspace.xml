@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05d40e36-23bd-46cf-a712-abeb0734692a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/box.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/kickboxen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mma.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mmaa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/train1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/train2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/train3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/train3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/train4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/train5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/train6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/training.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bezoeker/Homepage.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bezoeker/Kalenderpage.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BezoekerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BezoekerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/article/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +29,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -103,8 +121,14 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/code-symfony/start/tutorial/css" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mehmet Yildiz\TrainingFactory\public\css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -128,7 +152,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574413364783</updated>
-      <workItem from="1574413365970" duration="22733000" />
+      <workItem from="1574413365970" duration="30224000" />
+      <workItem from="1574935377373" duration="11577000" />
     </task>
     <servers />
   </component>
@@ -140,7 +165,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -78,5 +78,23 @@ class BezoekerController extends AbstractController
         // in the template, print things with {{ product.name }}
         // return $this->render('product/show.html.twig', ['product' => $product]);
     }
+
+    /**
+     * @Route("/colum")
+     */
+    public function Homepage()
+    {
+        return $this->render('bezoeker/Homepage.html.twig');
+    }
+    /**
+     * @Route("/kalender")
+     */
+    public function kalenderpage()
+    {
+        return $this->render('bezoeker/Kalenderpage.html.twig');
+    }
+
+
+
 }
 
