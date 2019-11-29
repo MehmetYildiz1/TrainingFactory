@@ -22,10 +22,14 @@ class BezoekerController extends AbstractController
         $entityManager = $this->getDoctrine()->getManager();
 
         $activiteit = new Activiteit();
-        $activiteit->setNaam('Mehmet');
-        $activiteit->setDescription('Dit is een persoon!');
-        $activiteit->setDuration(24);
-        $activiteit->setCosts(250);
+        $activiteit->setNaam('MMA');
+        $activiteit->setDescription('MMA combineert technieken uit verschillende vechtsporten, zoals 
+        kickboksen, thaiboksen, judo, worstelen (grappling), boksen en jiujitsu. Het doel hiervan is het 
+        vormen van de meest effectieve vechtsport voor een in theorie vrij gevecht. Ondanks het beeld wat
+         mensen hebben van MMA zijn echt niet alle technieken geoorloofd. Zo is het niet toegestaan om een 
+         tegenstander die op de grond ligt tegen het hoofd te trappen of te knieën.');
+        $activiteit->setDuration(60);
+        $activiteit->setCosts(150);
 
         // tell Doctrine you want to (eventually) save the Product (no queries yet)
         $entityManager->persist($activiteit);
@@ -80,7 +84,7 @@ class BezoekerController extends AbstractController
     }
 
     /**
-     * @Route("/colum")
+     * @Route("/home")
      */
     public function Homepage()
     {
