@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 class BezoekerController extends AbstractController
 {
     /**
-     * @Route("/bezoeker", name="create_product")
+     * @Route("/lid", name="create_product")
      */
     public function createActiviteit()
     {
@@ -63,19 +63,19 @@ class BezoekerController extends AbstractController
     /**
      * @Route("/activiteit/{id}")
      */
-    public function show($id)
+    public function show()
     {
         $activiteit = $this->getDoctrine()
             ->getRepository(Activiteit::class)
-            ->find($id);
+            ->findAll();
 
         if (!$activiteit) {
             throw $this->createNotFoundException(
-                'No product found for id '.$id
+                'No product found for id '
             );
         }
 
-        return $this ->render("/product/index.html.twig", ['activiteit'=>$activiteit]);
+        return $this ->render("lid/Kalenderpage.html.twig", ['activiteit'=>$activiteit]);
 
 
         // or render a template
@@ -88,14 +88,14 @@ class BezoekerController extends AbstractController
      */
     public function Homepage()
     {
-        return $this->render('bezoeker/Homepage.html.twig');
+        return $this->render('lid/Homepage.html.twig');
     }
     /**
      * @Route("/kalender")
      */
     public function kalenderpage()
     {
-        return $this->render('bezoeker/Kalenderpage.html.twig');
+        return $this->render('lid/Kalenderpage.html.twig');
     }
 
 
