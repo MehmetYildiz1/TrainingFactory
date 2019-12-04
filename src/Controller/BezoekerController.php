@@ -90,13 +90,11 @@ class BezoekerController extends AbstractController
     {
         return $this->render('lid/Homepage.html.twig');
     }
-    /**
-     * @Route("/kalender")
-     */
-    public function kalenderpage()
-    {
-        return $this->render('lid/Kalenderpage.html.twig');
-    }
+
+//    public function kalenderpage()
+//    {
+//        return $this->render('lid/Kalenderpage.html.twig');
+//    }
 
 
 

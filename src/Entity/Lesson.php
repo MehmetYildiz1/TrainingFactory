@@ -35,6 +35,10 @@ class Lesson
      * @ORM\Column(type="integer")
      */
     private $max_persons;
+    /**
+     * @ORM\ManyToOne(targetEntity="Activiteit", inversedBy="lessen")
+     */
+    private $activiteit;
 
     public function getId(): ?int
     {

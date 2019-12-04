@@ -39,7 +39,7 @@ class Activiteit
     private $costs;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Less", mappedBy="activiteit", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Entity\Lesson", mappedBy="activiteit", orphanRemoval=true)
      */
     private $lessen;
 

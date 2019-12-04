@@ -1,0 +1,91 @@
+
+
+{% extends 'base.html.twig' %}
+{% block body %}
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light blue">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Training Centrum Den Haag</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kalender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="col-sm"><img src="{{ asset('img/train1.jpg') }}" ></div>
+            </div>
+            <div class="col order-12">
+                <div class="col-sm"><img class="img" src="{{ asset('img/train5.jpg') }}" ></div>
+            </div>
+            <div class="col order-1">
+                <div class="col-sm"><img class="img" src="{{ asset('img/train6.jpg') }}" ></div>
+            </div>
+        </div>
+    </div>
+    <p class="p"><b>Inschrijven op les</b></p>
+    <p class="p"><b>VANDAAG</b></p>
+    <div class="card-group">
+        {% for a in activiteiten %}
+        <div class="card">
+            <img class="img3" src="{{ asset('img/'~ a.naam ~'.jpg') }}" >
+            <div class="card-body">
+                <h5 class="card-title">{{a.naam}}</h5>
+                <p class="card-text">{% for l in a.lessen %}{{ l.time|date("g:ia") }}{% endfor %}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        {% endfor %}
+{#        <div class="card">#}
+{#            <img class="img3" src="{{ asset('img/train5.jpg') }}" >#}
+{#            <div class="card-body">#}
+{#                <h5 class="card-title">Stootzak training</h5>#}
+{#                <p class="card-text">12:00 15:00 21:00</p>#}
+{#            </div>#}
+{#            <div class="card-footer">#}
+{#                <small class="text-muted">Last updated 3 mins ago</small>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="card">#}
+{#            <img class="img3" src="{{ asset('img/training.jpg') }}" >#}
+{#            <div class="card-body">#}
+{#                <h5 class="card-title">MMA</h5>#}
+{#                <p class="card-text">14:00 21:00</div>#}
+{#            <div class="card-footer">#}
+{#                <small class="text-muted">Last updated 3 mins ago</small>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+
+
+    <footer class="page-footer font-small fixed-bottom blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: Mehmet Yildiz</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+{% endblock %}
+
+{% block javascripts %}{% endblock %}

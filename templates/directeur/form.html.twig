@@ -1,8 +1,10 @@
-
-
+{# templates/directeur/form.html.twig #}
 {% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
 {% block body %}
     <header>
+
         <nav class="navbar navbar-expand-lg navbar-light blue">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -12,7 +14,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Kalender</a>
@@ -41,41 +43,15 @@
             </div>
         </div>
     </div>
-    <p class="p"><b>Inschrijven op les</b></p>
-    <p class="p"><b>VANDAAG</b></p>
-    <div class="card-group">
-        <div class="card">
-            <img class="img3" src="{{ asset('img/kickboxen.jpg') }}" >
-            <div class="card-body">
-                <h5 class="card-title">Kickboksen</h5>
-                <p class="card-text">12:00 14:00 21:00</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        <div class="card">
-            <img class="img3" src="{{ asset('img/train5.jpg') }}" >
-            <div class="card-body">
-                <h5 class="card-title">Stootzak training</h5>
-                <p class="card-text">12:00 15:00 21:00</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        <div class="card">
-            <img class="img3" src="{{ asset('img/training.jpg') }}" >
-            <div class="card-body">
-                <h5 class="card-title">MMA</h5>
-                <p class="card-text">14:00 21:00</div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-        </div>
+    <br><br><br><br><br><br><br>
+    <div class="row">
+        <div class="col-6 col-md-4"></div>
+        <div class="col-6 col-md-4"><h2>Activiteit toevoegen</h2><br><br>{{ form(form) }}</div>
+        <div class="col-6 col-md-4"></div>
     </div>
+    <div class="article">
 
-
+    </div>
     <footer class="page-footer font-small fixed-bottom blue">
 
         <!-- Copyright -->
