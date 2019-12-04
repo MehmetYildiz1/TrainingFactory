@@ -2,39 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05d40e36-23bd-46cf-a712-abeb0734692a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/Stootzak training.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Stootzak training.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Voetbal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/aa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/DirecteurController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/InstructeurController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/Type/ActiviteitType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20191203113055.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20191203113542.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/directeur/form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TrainingFactory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TrainingFactory.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/box.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/mmaa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BezoekerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BezoekerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Activiteit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Activiteit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Less.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Lesson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Training.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/LessRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ProductRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/TrainingRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Activiteit/showActiviteit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Activiteit/showActiviteit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lid/Kalenderpage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/directeur/Kalenderpage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/directeur/Kalenderpage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/directeur/Kalenderpage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lid/Homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lid/Homepage.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574413364783</updated>
       <workItem from="1574413365970" duration="30224000" />
-      <workItem from="1574935377373" duration="39489000" />
+      <workItem from="1574935377373" duration="43010000" />
     </task>
     <servers />
   </component>

@@ -12,10 +12,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kalender</a>
+                        <a class="nav-link" href="/kalender/">Kalender</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#"></a>
@@ -41,18 +41,20 @@
             </div>
         </div>
     </div>
+
     <p class="p"><b>Inschrijven op les</b></p>
-    <p class="p"><b>VANDAAG</b></p>
+    {% for a in activiteiten %}
+    <p class="p"><b>{% for l in a.lessen %}{{ l.date|date("m/d/Y ") }}{% endfor %}</b></p>
+    {% endfor %}
     <div class="card-group">
         {% for a in activiteiten %}
         <div class="card">
             <img class="img3" src="{{ asset('img/'~ a.naam ~'.jpg') }}" >
             <div class="card-body">
                 <h5 class="card-title">{{a.naam}}</h5>
-                <p class="card-text">{% for l in a.lessen %}{{ l.time|date("g:ia") }}{% endfor %}</p>
+                <p class="card-text">{% for l in a.lessen %}{{ l.time|date("H:i ") }}{% endfor %}</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
             </div>
         </div>
         {% endfor %}
