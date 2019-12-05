@@ -59,4 +59,28 @@ class DirecteurController extends AbstractController
 
         return $this->render("/directeur/Kalenderpage.html.twig" , ['activiteiten'=>$activiteiten]);
     }
+
+    /**
+     * @Route("/ListActiviteit")
+     */
+    public function listdo()
+    {
+        $activiteiten = $this->getDoctrine()
+            ->getRepository(Activiteit::class)
+            ->findAll();
+
+        if(!$activiteiten) {
+            throw $this->createNotFoundException('no product found ');
+        }
+
+        return $this->render("/directeur/ListActiviteit.html.twig" , ['activiteiten'=>$activiteiten]);
+    }
+
+    /**
+     * @Route("/ListActiviteit")
+     */
+    public function activiteitlist()
+    {
+        return $this->render('directeur/ListActiviteit.html.twig');
+    }
 }

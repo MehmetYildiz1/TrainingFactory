@@ -12,33 +12,33 @@ use Symfony\Component\HttpFoundation\Response;
 
 class BezoekerController extends AbstractController
 {
-    /**
-     * @Route("/lid", name="create_product")
-     */
-    public function createActiviteit()
-    {
-        // you can fetch the EntityManager via $this->getDoctrine()
-        // or you can add an argument to the action: createProduct(EntityManagerInterface $entityManager)
-        $entityManager = $this->getDoctrine()->getManager();
-
-        $activiteit = new Activiteit();
-        $activiteit->setNaam('MMA');
-        $activiteit->setDescription('MMA combineert technieken uit verschillende vechtsporten, zoals 
-        kickboksen, thaiboksen, judo, worstelen (grappling), boksen en jiujitsu. Het doel hiervan is het 
-        vormen van de meest effectieve vechtsport voor een in theorie vrij gevecht. Ondanks het beeld wat
-         mensen hebben van MMA zijn echt niet alle technieken geoorloofd. Zo is het niet toegestaan om een 
-         tegenstander die op de grond ligt tegen het hoofd te trappen of te knieën.');
-        $activiteit->setDuration(60);
-        $activiteit->setCosts(150);
-
-        // tell Doctrine you want to (eventually) save the Product (no queries yet)
-        $entityManager->persist($activiteit);
-
-        // actually executes the queries (i.e. the INSERT query)
-        $entityManager->flush();
-
-        return new Response('Saved new product with id '.$activiteit->getId());
-    }
+//    /**
+//     * @Route("/lid", name="create_product")
+//     */
+//    public function createActiviteit()
+//    {
+//        // you can fetch the EntityManager via $this->getDoctrine()
+//        // or you can add an argument to the action: createProduct(EntityManagerInterface $entityManager)
+//        $entityManager = $this->getDoctrine()->getManager();
+//
+//        $activiteit = new Activiteit();
+//        $activiteit->setNaam('MMA');
+//        $activiteit->setDescription('MMA combineert technieken uit verschillende vechtsporten, zoals
+//        kickboksen, thaiboksen, judo, worstelen (grappling), boksen en jiujitsu. Het doel hiervan is het
+//        vormen van de meest effectieve vechtsport voor een in theorie vrij gevecht. Ondanks het beeld wat
+//         mensen hebben van MMA zijn echt niet alle technieken geoorloofd. Zo is het niet toegestaan om een
+//         tegenstander die op de grond ligt tegen het hoofd te trappen of te knieën.');
+//        $activiteit->setDuration(60);
+//        $activiteit->setCosts(150);
+//
+//        // tell Doctrine you want to (eventually) save the Product (no queries yet)
+//        $entityManager->persist($activiteit);
+//
+//        // actually executes the queries (i.e. the INSERT query)
+//        $entityManager->flush();
+//
+//        return new Response('Saved new product with id '.$activiteit->getId());
+//    }
 //
 //    public function createLesson()
 //    {
@@ -90,11 +90,6 @@ class BezoekerController extends AbstractController
     {
         return $this->render('lid/Homepage.html.twig');
     }
-
-//    public function kalenderpage()
-//    {
-//        return $this->render('lid/Kalenderpage.html.twig');
-//    }
 
 
 

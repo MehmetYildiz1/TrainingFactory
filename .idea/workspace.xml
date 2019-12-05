@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05d40e36-23bd-46cf-a712-abeb0734692a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/directeur/ListActiviteit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BezoekerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BezoekerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DirecteurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DirecteurController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/directeur/Kalenderpage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/directeur/Kalenderpage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/directeur/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/directeur/form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/lid/Homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lid/Homepage.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -144,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574413364783</updated>
       <workItem from="1574413365970" duration="30224000" />
-      <workItem from="1574935377373" duration="43010000" />
+      <workItem from="1574935377373" duration="47608000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 {# templates/directeur/form.html.twig #}
 {% extends 'base.html.twig' %}
-{% form_theme form 'bootstrap_4_layout.html.twig' %}
+{#{% form_theme form 'bootstrap_4_layout.html.twig' %}#}
 
 {% block body %}
     <header>
@@ -44,11 +44,28 @@
         </div>
     </div>
     <br><br>
-    <div class="row">
-        <div class="col-6 col-md-4"></div>
-        <div class="col-6 col-md-4"><h2>Activiteit toevoegen</h2><br><br>{{ form(form) }}</div>
-        <div class="col-6 col-md-4"></div>
-    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Activiteit</th>
+            <th scope="col">Description</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Costs</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for a in activiteiten %}
+        <tr>
+            <th scope="row">{{ a.id }}</th>
+            <td>{{ a.naam }}</td>
+            <td>{{a.description}}</td>
+            <td>{{a.duration}}</td>
+            <td>{{a.costs}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
     <div class="article">
 
     </div>
