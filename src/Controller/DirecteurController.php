@@ -83,4 +83,34 @@ class DirecteurController extends AbstractController
     {
         return $this->render('directeur/ListActiviteit.html.twig');
     }
+
+//    /**
+//     * @Route("/ListActiviteit")
+//     */
+//    public function delete(Request $request)
+//    {
+//        // creates a task object and initializes some data for this example
+//        $activiteit = new Activiteit();
+//
+//        $form = $this->createForm(ActiviteitType::class, $activiteit);
+//
+//        $form->handleRequest($request);
+//        if ($form->isSubmitted() && $form->isValid()) {
+//            // $form->getData() holds the submitted values
+//            // but, the original `$task` variable has also been updated
+//            $activiteit = $form->getData();
+//
+//            // ... perform some action, such as saving the task to the database
+//            // for example, if Task is a Doctrine entity, save it!
+//            $entityManager = $this->getDoctrine()->getManager();
+//            $entityManager->remove($activiteit);
+//            $entityManager->flush();
+//
+//            return $this->redirectToRoute('activiteit');
+//        }
+//        // ...
+//        return $this->render('directeur/ListActiviteit.html.twig', [
+//            'form' => $form->createView(),
+//        ]);
+//    }
 }
